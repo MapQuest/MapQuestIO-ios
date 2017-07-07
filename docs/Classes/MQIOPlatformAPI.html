@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>MQIOPlatformAPI Class Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1334)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="../index.html">MapQuest.io </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">MapQuest</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
+	<option value="top">Jump To&#133;</option>
+	
+
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+
+	
+	
+
+	
+	<optgroup label="Class Methods">
+		
+		<option value="//api/name/createShareSession:">+ createShareSession:</option>
+		
+		<option value="//api/name/createShareSessionWithDuration:completion:">+ createShareSessionWithDuration:completion:</option>
+		
+		<option value="//api/name/reportLocations:completion:">+ reportLocations:completion:</option>
+		
+		<option value="//api/name/reportObservations:completion:">+ reportObservations:completion:</option>
+		
+		<option value="//api/name/retrieveObservationsWithShareId:completion:">+ retrieveObservationsWithShareId:completion:</option>
+		
+		<option value="//api/name/retrieveObservationsWithShareId:fromTime:completion:">+ retrieveObservationsWithShareId:fromTime:completion:</option>
+		
+	</optgroup>
+	
+
+	
+	
+</select>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">MQIOPlatformAPI Class Reference</h1>
+
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Inherits from</th>
+	<td>NSObject</td>
+</tr><tr>
+	<th>Declared in</th>
+	<td>MQIOPlatformAPI.h</td>
+</tr>
+						</tbody></table></div>
+					
+
+                    
+
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						
+
+						<a title="Rules Methods" name="task_Rules Methods"></a>
+						<h2 class="task-title">Rules Methods</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/createShareSession:" title="createShareSession:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/createShareSession:">+&nbsp;createShareSession:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Adding a session returns a UUID used to reference the session for updates and reads using the default timeout (10 mins).</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)createShareSession:(void ( ^ _Nullable ) ( NSString *_Nullable , NSError *_Nullable , NSInteger ))<em>completion</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completion</code></th>
+						<td><p>Returns a <em>share Id</em> or error.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Adding a session returns a UUID used to reference the session for updates and reads using the default timeout (10 mins).</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MQIOPlatformAPI.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/createShareSessionWithDuration:completion:" title="createShareSessionWithDuration:completion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/createShareSessionWithDuration:completion:">+&nbsp;createShareSessionWithDuration:completion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Adding a session returns a UUID used to reference the session for updates and reads.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)createShareSessionWithDuration:(int)<em>timeout</em> completion:(void ( ^ _Nullable ) ( NSString *_Nullable , NSError *_Nullable , NSInteger ))<em>completion</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>timeout</code></th>
+						<td><p>How long the share session should last.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completion</code></th>
+						<td><p>Returns a <em>share Id</em> or error.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Adding a session returns a UUID used to reference the session for updates and reads.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MQIOPlatformAPI.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/retrieveObservationsWithShareId:completion:" title="retrieveObservationsWithShareId:completion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/retrieveObservationsWithShareId:completion:">+&nbsp;retrieveObservationsWithShareId:completion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Get all observations for a share session. A share session can potentially have a large amount of data and is recommended to call only if all observations are needed. Otherwise consider using retrieveObservationsWithShareId:afterTime:completion:.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)retrieveObservationsWithShareId:(nonnull NSString *)<em>shareId</em> completion:(void ( ^ _Nullable ) ( NSArray&lt;MQIOObservation*&gt; *_Nullable , NSError *_Nullable , NSInteger ))<em>completion</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>shareId</code></th>
+						<td><p>The <em>share session</em> id.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completion</code></th>
+						<td><p>All observations are returned in oldest-to-newest order or an error.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Get all observations for a share session. A share session can potentially have a large amount of data and is recommended to call only if all observations are needed. Otherwise consider using retrieveObservationsWithShareId:afterTime:completion:.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MQIOPlatformAPI.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/retrieveObservationsWithShareId:fromTime:completion:" title="retrieveObservationsWithShareId:fromTime:completion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/retrieveObservationsWithShareId:fromTime:completion:">+&nbsp;retrieveObservationsWithShareId:fromTime:completion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Get observations for a share session from a time in the past to now.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)retrieveObservationsWithShareId:(nonnull NSString *)<em>shareId</em> fromTime:(NSInteger)<em>modifiedTimeSince1970</em> completion:(void ( ^ _Nullable ) ( NSArray&lt;MQIOObservation*&gt; *_Nullable , NSError *_Nullable , NSInteger ))<em>completion</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>shareId</code></th>
+						<td><p>The <em>share session</em> id.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>modifiedTimeSince1970</code></th>
+						<td><p>The time to start retrieving observations. Passing in zero results in all observations for this share.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completion</code></th>
+						<td><p>All observations are returned in oldest-to-newest order or an error.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Get observations for a share session from a time in the past to now.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MQIOPlatformAPI.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						<a title="Devices Methods" name="task_Devices Methods"></a>
+						<h2 class="task-title">Devices Methods</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/reportLocations:completion:" title="reportLocations:completion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/reportLocations:completion:">+&nbsp;reportLocations:completion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Report the device&rsquo;s location.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)reportLocations:(nonnull NSArray&lt;CLLocation*&gt; *)<em>locations</em> completion:(void ( ^ _Nullable ) ( NSData *_Nullable , NSError *_Nullable , NSInteger ))<em>completion</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>locations</code></th>
+						<td><p>An array of locations ordered by newest to oldest.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completion</code></th>
+						<td><p>Data or an error on failure.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Report the device&rsquo;s location.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MQIOPlatformAPI.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/reportObservations:completion:" title="reportObservations:completion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/reportObservations:completion:">+&nbsp;reportObservations:completion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Report a device&rsquo;s observation.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)reportObservations:(nonnull NSArray&lt;MQIOObservation*&gt; *)<em>observations</em> completion:(void ( ^ _Nullable ) ( NSData *_Nullable , NSError *_Nullable , NSInteger ))<em>completion</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>observations</code></th>
+						<td><p>An array of observations ordered by newest to oldest.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completion</code></th>
+						<td><p>Data or an error on failure.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Report a device&rsquo;s observation.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MQIOPlatformAPI.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+					</div>
+					
+					
+
+                    
+                    
+          
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2017 MapQuest. All rights reserved. Updated: 2017-07-07</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>
